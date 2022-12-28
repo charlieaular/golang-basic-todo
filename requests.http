@@ -1,0 +1,43 @@
+@apiUrl = http://localhost:8000
+
+###
+GET {{apiUrl}}/todo
+Content-Type: application/json
+
+###
+GET {{apiUrl}}/todo/2
+Content-Type: application/json
+
+###
+POST {{apiUrl}}/todo
+Content-Type: application/json
+
+{
+    "name": "nuevo"
+}
+
+###
+PUT {{apiUrl}}/todo/4
+Content-Type: application/json
+
+{
+    "name": "Todo4"
+}
+
+###
+DELETE  {{apiUrl}}/todo/3
+Content-Type: application/json
+
+###
+PUT {{apiUrl}}/todo/change-visibility/2
+Content-Type: application/json
+
+###
+PUT {{apiUrl}}/todo/change-all-done
+Content-Type: application/json
+
+{
+  "done": false
+}
+
+
